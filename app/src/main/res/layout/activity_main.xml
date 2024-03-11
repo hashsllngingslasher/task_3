@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/location"
+    tools:context=".MainActivity">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_confetti"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true" />
+
+    <Button
+        android:id="@+id/btn_battle"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="320dp"
+        android:backgroundTint="#427EC3"
+        android:text="Battle!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/img_gurren"
+        android:layout_width="150dp"
+        android:layout_height="250dp"
+        android:layout_marginStart="70dp"
+        android:background="@drawable/gurren_lagann"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/img_kittan"
+        android:layout_width="150dp"
+        android:layout_height="250dp"
+        android:layout_marginEnd="70dp"
+        android:background="@drawable/king_kittan"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/img_versus"
+        android:layout_width="140dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/versus"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_who_win"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WIN!"
+        android:visibility="invisible"
+        android:textSize="62sp"
+        android:textStyle="bold"
+        android:textColor="#378515"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/energy_gurren"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/red"
+        android:text="Energy 100"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="@+id/img_gurren"
+        app:layout_constraintStart_toStartOf="@+id/img_gurren"
+        app:layout_constraintTop_toBottomOf="@+id/img_gurren" />
+
+    <TextView
+        android:id="@+id/energy_kittan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/yellow"
+        android:text="Energy 100"
+        android:textColor="@color/white"
+        android:textSize="28dp"
+        app:layout_constraintEnd_toEndOf="@id/img_kittan"
+        app:layout_constraintStart_toStartOf="@id/img_kittan"
+        app:layout_constraintTop_toBottomOf="@id/img_kittan" />
+
+    <TextView
+        android:id="@+id/power_gurren"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:background="#551616"
+        android:text="Power 100"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="@+id/img_gurren"
+        app:layout_constraintStart_toStartOf="@+id/img_gurren"
+        app:layout_constraintTop_toBottomOf="@+id/img_gurren" />
+
+    <TextView
+        android:id="@+id/power_kittan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:background="#DF823B"
+        android:text="Power 100"
+        android:textColor="@color/white"
+        android:textSize="28dp"
+        app:layout_constraintEnd_toEndOf="@id/img_kittan"
+        app:layout_constraintStart_toStartOf="@id/img_kittan"
+        app:layout_constraintTop_toBottomOf="@id/img_kittan" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
